@@ -1,4 +1,4 @@
-import { getConsultas, setConsultas } from "../db/db";
+import { getConsultas, setConsultas } from "../db/db.js";
 
 export function listarConsultas(){
     return getConsultas();

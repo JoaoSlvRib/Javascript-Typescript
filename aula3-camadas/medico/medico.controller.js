@@ -1,4 +1,4 @@
-import * as medicoService from './service.js'
+import * as medicoService from './medico.service.js'
 
 //async await para treinar
 
