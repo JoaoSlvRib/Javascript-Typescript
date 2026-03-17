@@ -14,7 +14,7 @@ export function criarConsulta(pacienteId, medicoId, data, horario){
     let indisponivel = false;
     for(const c of consultas){
         if (medicoId === c.medicoId && data === c.data && horario === c.horario){
-            insdisponivel = true;
+            indisponivel = true;
             break;
         }
     }
