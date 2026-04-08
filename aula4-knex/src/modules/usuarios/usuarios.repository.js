@@ -3,8 +3,8 @@ import { database } from '../../config/knexfile.js';
 export const usuariosRepository = {
 
   async create(data) {
-    console.log('Usuário criado:', data)
-    return database('usuarios').insert(data);
+    await database('usuarios').insert(data);
+    return database('usuarios').where({ email: data.email }).first();
   },
 
   async findAll() {
